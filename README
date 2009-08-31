@@ -1,76 +1,27 @@
-woody@Woody:~/OPENSource/ruby_git$ ssh -v git@github.com
-OpenSSH_5.1p1 Debian-5ubuntu1, OpenSSL 0.9.8g 19 Oct 2007
-debug1: Reading configuration data /etc/ssh/ssh_config
-debug1: Applying options for *
-debug1: Connecting to github.com [65.74.177.129] port 22.
-debug1: Connection established.
-debug1: identity file /home/woody/.ssh/identity type -1
-debug1: identity file /home/woody/.ssh/id_rsa type 1
-debug1: Checking blacklist file /usr/share/ssh/blacklist.RSA-2048
-debug1: Checking blacklist file /etc/ssh/blacklist.RSA-2048
-debug1: identity file /home/woody/.ssh/id_dsa type -1
-debug1: Remote protocol version 2.0, remote software version OpenSSH_5.2
-debug1: match: OpenSSH_5.2 pat OpenSSH*
-debug1: Enabling compatibility mode for protocol 2.0
-debug1: Local version string SSH-2.0-OpenSSH_5.1p1 Debian-5ubuntu1
-debug1: SSH2_MSG_KEXINIT sent
-debug1: SSH2_MSG_KEXINIT received
-debug1: kex: server->client aes128-cbc hmac-md5 none
-debug1: kex: client->server aes128-cbc hmac-md5 none
-debug1: SSH2_MSG_KEX_DH_GEX_REQUEST(1024<1024<8192) sent
-debug1: expecting SSH2_MSG_KEX_DH_GEX_GROUP
-debug1: SSH2_MSG_KEX_DH_GEX_INIT sent
-debug1: expecting SSH2_MSG_KEX_DH_GEX_REPLY
-debug1: Host 'github.com' is known and matches the RSA host key.
-debug1: Found key in /home/woody/.ssh/known_hosts:1
-debug1: ssh_rsa_verify: signature correct
-debug1: SSH2_MSG_NEWKEYS sent
-debug1: expecting SSH2_MSG_NEWKEYS
-debug1: SSH2_MSG_NEWKEYS received
-debug1: SSH2_MSG_SERVICE_REQUEST sent
-debug1: SSH2_MSG_SERVICE_ACCEPT received
-debug1: Authentications that can continue: publickey
-debug1: Next authentication method: publickey
-debug1: Offering public key: /home/woody/.ssh/id_rsa
-debug1: Remote: Forced command: gerve woody1983/ruby
-debug1: Remote: Port forwarding disabled.
-debug1: Remote: X11 forwarding disabled.
-debug1: Remote: Agent forwarding disabled.
-debug1: Remote: Pty allocation disabled.
-debug1: Server accepts key: pkalg ssh-rsa blen 277
-debug1: Remote: Forced command: gerve woody1983/ruby
-debug1: Remote: Port forwarding disabled.
-debug1: Remote: X11 forwarding disabled.
-debug1: Remote: Agent forwarding disabled.
-debug1: Remote: Pty allocation disabled.
-debug1: Authentication succeeded (publickey).
-debug1: channel 0: new [client-session]
-debug1: Requesting no-more-sessions@openssh.com
-debug1: Entering interactive session.
-debug1: Sending environment.
-debug1: Sending env LANG = zh_CN.UTF-8
-PTY allocation request failed on channel 0
-Hi woody1983/ruby! You've successfully authenticated, but GitHub does not provide shell access.
-                                                                                               debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
-debug1: client_input_channel_req: channel 0 rtype eow@openssh.com reply 0
-debug1: channel 0: free: client-session, nchannels 1
-Connection to github.com closed.
-Transferred: sent 2544, received 2904 bytes, in 0.3 seconds
-Bytes per second: sent 7679.9, received 8766.6
-debug1: Exit status 1
+woody@Woody:~/OPENSource/ruby_git$ git add .
+woody@Woody:~/OPENSource/ruby_git$ git commit -m 'update gedit'
+Created commit c1caec8: update gedit
+ 2 files changed, 5 insertions(+), 0 deletions(-)
+ create mode 100644 hello.rb~
 woody@Woody:~/OPENSource/ruby_git$ git push origin master
-fatal: 'origin': unable to chdir or not a git archive
-fatal: The remote end hung up unexpectedly
-woody@Woody:~/OPENSource/ruby_git$ git remote add origin git@github.com:woody1983/ruby.git
-woody@Woody:~/OPENSource/ruby_git$ git push origin master
-Counting objects: 3, done.
-Writing objects: 100% (3/3), 214 bytes, done.
+Counting objects: 5, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 366 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:woody1983/ruby.git
- * [new branch]      master -> master
-D
-D
-C
-C
-C
+   956712d..c1caec8  master -> master
+woody@Woody:~/OPENSource/ruby_git$ git rm hello.rb~
+rm 'hello.rb~'
+woody@Woody:~/OPENSource/ruby_git$ git commit -m 'update gedit rm'
+Created commit dcc10f4: update gedit rm
+ 1 files changed, 0 insertions(+), 4 deletions(-)
+ delete mode 100644 hello.rb~
+woody@Woody:~/OPENSource/ruby_git$ git push origin master
+Counting objects: 3, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 219 bytes, done.
+Total 2 (delta 1), reused 0 (delta 0)
+To git@github.com:woody1983/ruby.git
+   c1caec8..dcc10f4  master -> master
+woody@Woody:~/OPENSource/ruby_git$ 
 
