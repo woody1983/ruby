@@ -1,3 +1,0 @@
-<ul>
-	<li><%= link_to 'Home', '/' %></li>
-</ul>
