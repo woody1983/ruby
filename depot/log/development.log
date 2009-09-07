@@ -1656,3 +1656,488 @@ Rendering template within layouts/store
 Rendering store/index
   [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
 Completed in 86ms (View: 65, DB: 3) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (69.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 16:54:14) [GET]
+  [4;36;1mProduct Load (203.6ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (79.2ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 644ms (View: 197, DB: 503) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#create (for 127.0.0.1 at 2009-09-07 17:01:14) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+
+ActionController::UnknownAction (No action responded to create. Actions: add_to_cart and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:02:12) [GET]
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 57ms (View: 12, DB: 2) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#create (for 127.0.0.1 at 2009-09-07 17:02:13) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+
+ActionController::UnknownAction (No action responded to create. Actions: add_to_cart and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#create (for 127.0.0.1 at 2009-09-07 17:04:54) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+
+ActionController::UnknownAction (No action responded to create. Actions: add_to_cart and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:04:57) [GET]
+  [4;36;1mProduct Load (20.1ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (4.7ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 42ms (View: 8, DB: 25) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:05:12) [GET]
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 52ms (View: 39, DB: 3) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#create (for 127.0.0.1 at 2009-09-07 17:05:14) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+
+ActionController::UnknownAction (No action responded to create. Actions: add_to_cart and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:05:57) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 49ms (View: 7, DB: 2) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:05:59) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (18.7ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (4.8ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 111ms (View: 7, DB: 24) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:06:01) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 58ms (View: 12, DB: 27) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:06:02) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (4.8ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 25ms (View: 8, DB: 6) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:06:03) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 36ms (View: 7, DB: 5) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:06:03) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 41ms (View: 6, DB: 26) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#create (for 127.0.0.1 at 2009-09-07 17:06:09) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+
+ActionController::UnknownAction (No action responded to create. Actions: add_to_cart and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#create (for 127.0.0.1 at 2009-09-07 17:11:55) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+
+ActionController::UnknownAction (No action responded to create. Actions: add_to_cart and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#create (for 127.0.0.1 at 2009-09-07 17:11:58) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+
+ActionController::UnknownAction (No action responded to create. Actions: add_to_cart and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-07 17:12:03) [GET]
+
+ActionController::RoutingError (No route matches "/%5C" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:12:11) [GET]
+  [4;36;1mSQL (19.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+NoMethodError (undefined method `find_products_for_sale' for #<Class:0xb739c328>):
+  app/controllers/store_controller.rb:11:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (97.3ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:39:15) [GET]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+NoMethodError (undefined method `find_products_for_sale' for #<Class:0xb75e72b8>):
+  app/controllers/store_controller.rb:11:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.6ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:39:16) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+NoMethodError (undefined method `find_products_for_sale' for #<Class:0xb73b439c>):
+  app/controllers/store_controller.rb:11:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:42:18) [GET]
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #2 of app/views/store/index.html.erb:
+1: <h1>Your Pragmatic Catalog</h1>
+2: <% for product in @products -%>
+3:   <div class="entry">
+4:     <%= image_tag(product.image_url) %>
+5:     <h3><%=h product.title %></h3>
+
+    app/views/store/index.html.erb:2
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (75.2ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:46:41) [GET]
+  [4;36;1mProduct Load (8.0ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 67ms (View: 27, DB: 11) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:46:46) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 32ms (View: 7, DB: 2) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:46:48) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (4.0ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 34ms (View: 7, DB: 17) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#create (for 127.0.0.1 at 2009-09-07 17:47:14) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+
+ActionController::UnknownAction (No action responded to create. Actions: add_to_cart and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#create (for 127.0.0.1 at 2009-09-07 17:47:16) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+
+ActionController::UnknownAction (No action responded to create. Actions: add_to_cart and index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:47:39) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (17.0ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 34ms (View: 6, DB: 19) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 17:47:41) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (12.6ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 30ms (View: 6, DB: 14) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 18:05:55) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 28ms (View: 6, DB: 2) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-09-07 18:07:03) [POST]
+  Parameters: {"authenticity_token"=>"PVLNppPywxYeUWJ3G6NaSuOfJ5Gcnr4b+7JLrJhY/Zw="}
+  [4;36;1mProduct Load (57.0ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 75ms (View: 7, DB: 59) | 200 OK [http://localhost/store]
