@@ -1,0 +1,1198 @@
+# Logfile created on Tue Sep 08 14:34:37 +0800 2009  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:20:57) [GET]
+  [4;35;1mUser Columns (60.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 108ms (View: 42, DB: 61) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:20:57) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (21.3ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:20:57', '2009-09-08 07:20:57', 'invalid username', NULL, 'invalid email')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/1
+Completed in 42ms (DB: 22) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:20:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (19.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 24ms (View: 2, DB: 20) | 200 OK [http://www.example.com/users/1]
+  [4;36;1mSQL (50.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:20:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 51) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:20:57) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:20:57', '2009-09-08 07:20:57', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/2
+Completed in 6ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:20:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/2]
+  [4;36;1mSQL (1.5ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:23:16) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 23ms (View: 17, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:23:16) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:23:16', '2009-09-08 07:23:16', 'invalid username', NULL, 'invalid email')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/3
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/3 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:23:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/3]
+  [4;36;1mSQL (5.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:23:16) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 4, DB: 5) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:23:16) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:23:16', '2009-09-08 07:23:16', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/4
+Completed in 7ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/4 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:23:16) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/4]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:28:06) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 21, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:28:06) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (38.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 59ms (View: 12, DB: 39) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:28:06) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 104ms (View: 18, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:28:06) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:28:06', '2009-09-08 07:28:06', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/5
+Completed in 21ms (DB: 2) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/5 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:28:06) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users/5]
+  [4;36;1mSQL (29.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:28:33) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 24ms (View: 16, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:28:33) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 17ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:28:33) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 106ms (View: 20, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:28:33) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:28:33', '2009-09-08 07:28:33', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/6
+Completed in 21ms (DB: 2) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/6 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:28:33) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/users/6]
+  [4;36;1mSQL (3.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:31:12) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 23ms (View: 17, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:31:13) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (4.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 19ms (View: 5, DB: 5) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:31:13) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:31:13) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:31:13', '2009-09-08 07:31:13', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/7
+Completed in 25ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/7 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:31:13) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/7]
+  [4;36;1mSQL (5.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:31:13) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 4, DB: 5) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"Woody", "password"=>"password", "email"=>"woody1983@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:31:13) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"Woody", "password"=>"password", "email"=>"woody1983@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'Woody') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'woody1983@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:31:13', '2009-09-08 07:31:13', 'Woody', NULL, 'woody1983@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/8
+Completed in 15ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/8 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:31:13) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/8]
+  [4;36;1mSQL (21.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:31:53) [GET]
+  [4;35;1mUser Columns (29.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 51ms (View: 16, DB: 30) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:31:53) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:31:53) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:31:53) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:31:53', '2009-09-08 07:31:53', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/9
+Completed in 26ms (DB: 2) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/9 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:31:53) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/9]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:31:53) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"woody1983@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:31:53) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"woody1983@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'valid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'woody1983@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:31:53', '2009-09-08 07:31:53', 'valid username', NULL, 'woody1983@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/10
+Completed in 15ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/10 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:31:53) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/10]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:32:24) [GET]
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:32:24) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:32:24) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:32:24) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:32:24', '2009-09-08 07:32:24', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/11
+Completed in 26ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/11 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:32:24) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/11]
+  [4;36;1mSQL (2.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:32:24) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 3) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"valid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:32:24) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"valid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'valid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'valid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 19ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:33:48) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 23ms (View: 17, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:33:48) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 16ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:33:48) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:33:48) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:33:48', '2009-09-08 07:33:48', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/12
+Completed in 25ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/12 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:33:48) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/12]
+  [4;36;1mSQL (4.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:33:48) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 4) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:33:48) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'valid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 19ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:34:02) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:34:02) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:34:02) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:34:02) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:34:02', '2009-09-08 07:34:02', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/13
+Completed in 26ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/13 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:34:02) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 13) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/13]
+  [4;36;1mSQL (5.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:34:02) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 5) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"1@email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:34:02) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"1@email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'valid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY '1@email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 20ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:34:29) [GET]
+  [4;35;1mUser Columns (8.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 36ms (View: 21, DB: 9) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:34:29) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (16.8ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 32ms (View: 6, DB: 18) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:34:29) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:34:29) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (14.9ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:34:29', '2009-09-08 07:34:29', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/14
+Completed in 35ms (DB: 16) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/14 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:34:29) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mUser Load (13.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 14) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 17ms (View: 2, DB: 14) | 200 OK [http://www.example.com/users/14]
+  [4;36;1mSQL (3.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:34:29) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 5, DB: 4) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"test@email.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:34:29) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"test@email.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'valid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'test@email.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:34:29', '2009-09-08 07:34:29', 'valid username', NULL, 'test@email.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/15
+Completed in 9ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/15 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:34:29) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 15) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/15]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:34:38) [GET]
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 36ms (View: 18, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:34:38) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (3.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 24ms (View: 8, DB: 4) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:34:38) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:34:38) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (21.8ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:34:38', '2009-09-08 07:34:38', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/16
+Completed in 41ms (DB: 23) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/16 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:34:38) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://www.example.com/users/16]
+  [4;36;1mSQL (30.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:34:38) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 4, DB: 30) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"1@email.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:34:39) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"valid username", "password"=>"password", "email"=>"1@email.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'valid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY '1@email.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:34:39', '2009-09-08 07:34:39', 'valid username', NULL, '1@email.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/17
+Completed in 9ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/17 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:34:39) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 17) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/17]
+  [4;36;1mSQL (2.8ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:36:27) [GET]
+  [4;35;1mUser Columns (14.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 37ms (View: 18, DB: 15) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:36:27) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (11.3ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 27ms (View: 5, DB: 12) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:36:27) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:36:27) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:36:27', '2009-09-08 07:36:27', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/18
+Completed in 35ms (DB: 2) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/18 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:36:27) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 18) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/18]
+  [4;36;1mSQL (4.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:36:27) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 4) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"username", "password"=>"password", "email"=>"cucumber@email.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:36:27) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"username", "password"=>"password", "email"=>"cucumber@email.com"}}
+  [4;36;1mSQL (11.5ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'cucumber@email.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:36:27', '2009-09-08 07:36:27', 'username', NULL, 'cucumber@email.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/19
+Completed in 20ms (DB: 13) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/19 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:36:27) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 19) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/19]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:36:45) [GET]
+  [4;35;1mUser Columns (10.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 35ms (View: 19, DB: 11) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:36:45) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 33ms (View: 6, DB: 2) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:36:45) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:36:46) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (17.8ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:36:46', '2009-09-08 07:36:46', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/20
+Completed in 37ms (DB: 19) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/20 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:36:46) [GET]
+  Parameters: {"id"=>"20"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 20) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/20]
+  [4;36;1mSQL (5.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:36:46) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 6) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"invalid username", "password"=>"password", "email"=>"cucumber@email.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:36:46) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"invalid username", "password"=>"password", "email"=>"cucumber@email.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'cucumber@email.com') LIMIT 1[0m
+  [4;35;1mUser Create (12.1ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:36:46', '2009-09-08 07:36:46', 'invalid username', NULL, 'cucumber@email.com')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/21
+Completed in 22ms (DB: 13) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/21 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:36:46) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/21]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:37:18) [GET]
+  [4;35;1mUser Columns (13.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 37ms (View: 18, DB: 14) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:37:18) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (3.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 6, DB: 5) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:37:18) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:37:18) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:37:18', '2009-09-08 07:37:18', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/22
+Completed in 48ms (DB: 2) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/22 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:37:18) [GET]
+  Parameters: {"id"=>"22"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 22) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://www.example.com/users/22]
+  [4;36;1mSQL (4.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:37:18) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 5) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"invalid username", "password"=>"password", "email"=>"cucumber@email.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:37:18) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"invalid username", "password"=>"password", "email"=>"cucumber@email.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'cucumber@email.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:37:18', '2009-09-08 07:37:18', 'invalid username', NULL, 'cucumber@email.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/23
+Completed in 9ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/23 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:37:18) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/23]
+  [4;36;1mSQL (31.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:38:08) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 22ms (View: 16, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:38:08) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:38:08) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:38:08) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:38:08', '2009-09-08 07:38:08', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/24
+Completed in 25ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/24 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:38:08) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/24]
+  [4;36;1mSQL (14.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:38:08) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 11ms (View: 4, DB: 15) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"woody", "password"=>"password", "email"=>"woody1983@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:38:08) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"woody", "password"=>"password", "email"=>"woody1983@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'woody') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'woody1983@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:38:08', '2009-09-08 07:38:08', 'woody', NULL, 'woody1983@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/25
+Completed in 9ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/25 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:38:08) [GET]
+  Parameters: {"id"=>"25"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/25]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:42:57) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 23ms (View: 17, DB: 2) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:42:57) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"verify password", "username"=>"invalid username", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'invalid username') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 16ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:42:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:42:58) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"404", "password"=>"password", "email"=>"xuliicom@gmail.com"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (6.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY '404') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'xuliicom@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `username`, `password_salt`, `email`) VALUES(NULL, '2009-09-08 07:42:58', '2009-09-08 07:42:58', '404', NULL, 'xuliicom@gmail.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/26
+Completed in 28ms (DB: 7) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/26 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-09-08 15:42:58) [GET]
+  Parameters: {"id"=>"26"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 26) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/26]
+  [4;36;1mSQL (4.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-09-08 15:42:58) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 4) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"woody", "password"=>"password", "email"=>"invalid email"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-09-08 15:42:58) [POST]
+  Parameters: {"commit"=>"注册", "user"=>{"password_confirmation"=>"password", "username"=>"woody", "password"=>"password", "email"=>"invalid email"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'woody') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'invalid email') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 19ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
