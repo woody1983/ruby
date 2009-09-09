@@ -2,6 +2,9 @@
 
 1 建立项目
 2 实现cucumber ruby script/generate cucumber
+3 在 features/ 目录下面创建一个 user_signup.feature 文件，用来写我们期望的故事（功能需求）
+4 编写用于故事运行的测试代码 $ gedit features/step_definitions/user_steps.rb
+5 编写程序 controller model
 
 
 
