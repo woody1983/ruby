@@ -21,7 +21,7 @@ development:
   database: demo_development
   pool: 5
   username: root
-  password:
+  password: gigiking
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -34,7 +34,7 @@ test:
   database: demo_test
   pool: 5
   username: root
-  password:
+  password: gigiking
   socket: /var/run/mysqld/mysqld.sock
 
 production:
