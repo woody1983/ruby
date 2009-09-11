@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
-describe User do
+describe User do         #describe 描述／形容
   before(:each) do
     @valid_attributes = {
       :username => "404",
@@ -11,7 +11,7 @@ describe User do
     		@user = User.new(@valid_attributes)
   end
 
-	  it 'should be valid' do # 应该是有效的
+	  it 'should be valid 应该是有效的' do # 应该是有效的
         @user.should be_valid
       end
       
