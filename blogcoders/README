@@ -1,3 +1,0 @@
-route的修改
-map.resources :blogs
-map.root :controller => "blogs"
