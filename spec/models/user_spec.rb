@@ -11,23 +11,23 @@ describe User do         #describe 描述／形容
     		@user = User.new(@valid_attributes)
   end
 
-	  it 'should be valid 应该是有效的' do # 应该是有效的
-        @user.should be_valid
+	  it 'should be valid 应该是有效的' do 
+        @user.should be_valid #应该是有效的。
       end
       
       it 'should require a username' do #应该需要一个用户名
-        @user.username = ''
-        @user.should_not be_valid
+        @user.username = ''  #如果用户名是空的
+        @user.should_not be_valid #@user就不应该是有效的数据
         @user.should have(1).errors_on(:username)
       end
       
-      it 'should not be valid without a email' do #不应该没有有效的电子邮件？？？
-        @user.email = ''
-        @user.should_not be_valid
+      it 'should not be valid without a email' do 
+        @user.email = '' #如果是email地址是空的 
+        @user.should_not be_valid #那实例也不应该是有效的
       end
       
-      it 'should be valid if email past the correct match' do #应该是有效的电子邮件，如果过去的正确匹配
-        @user.email.should match(/^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i)
+      it 'should be valid if email past the correct match' do 
+        @user.email.should match(/^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i) #email地址应该符合这种格式
       end
       
       it "should have a unique username and password" do #应该有一个独特的用户名和密码
@@ -38,26 +38,26 @@ describe User do         #describe 描述／形容
         @second_user.should have(1).errors_on(:email)
       end
       
-      it 'should not be valid without a password' do #不应该是有效的，不需要密码
-        @user.password = ''
-        @user.should_not be_valid
+      it 'should not be valid without a password' do 
+        @user.password = ''    #如果密码为空
+        @user.should_not be_valid #就不应该是有效的
       end
       
-      it 'should be valid if password has a minimum of 4 characters' do#应该是有效的，如果密码有4个字符最低
-        @user.password.should have_at_least(4).characters
+      it 'should be valid if password has a minimum of 4 characters' do
+        @user.password.should have_at_least(4).characters #密码应该不小于4位
       end
       
-      it 'should be valid if password has not more than 40 characters' do#应该是有效的，如果密码已经不超过40个字符
-        @user.password.should have_at_most(40).characters
+      it 'should be valid if password has not more than 40 characters' do
+        @user.password.should have_at_most(40).characters #密码不应该超过40个字符
       end
       
-      it 'should be valid if password and password confirmation match' do#应该是有效的，如果密码和确认密码匹配
-        @user.password_confirmation.should == @user.password
+      it 'should be valid if password and password confirmation match' do
+        @user.password_confirmation.should == @user.password #确认密码应该和密码一致
       end
 
-      it "should encrypt the password before saving to the database" do#之前，应进行加密保存到数据库中的密码
+      it "should encrypt the password before saving to the database" do
         @user.save
-        @user.password_salt.should_not be_nil
-        @user.encrypted_password.should_not be_nil
+        @user.password_salt.should_not be_nil #生成的password_salt不应该为空
+        @user.encrypted_password.should_not be_nil #加密处理过的密码不应该为空
       end
 end
